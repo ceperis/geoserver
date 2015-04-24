@@ -348,6 +348,43 @@
 
   <profiles>
     <profile>
+      <id>HelloWPS</id>
+      <dependencies>
+        <dependency>
+          <groupId>org.geoserver.wps.tracasa</groupId>
+          <artifactId>HelloWPS</artifactId>
+          <version>1.0-SNAPSHOT</version>
+        </dependency>
+      </dependencies>
+    </profile>
+    <profile>
+      <id>DameMunicipio</id>
+      <dependencies>
+        <dependency>
+          <groupId>org.geoserver.wps.tracasa</groupId>
+          <artifactId>Tracasa.DameMunicipio</artifactId>
+          <version>1.0.0</version>
+        </dependency>
+      </dependencies>
+    </profile>
+    <profile>
+      <id>LRSGeocodePk</id>
+      <dependencies>
+        <dependency>
+          <groupId>org.geoserver.wps.tracasa</groupId>
+          <artifactId>Tracasa.LRSGeocodePk</artifactId>
+          <version>1.0.0</version>
+        </dependency>
+        <!-- ### ANULADO; Hasta que sea necesario referenciarlo para compartir funciones o clases HELPER sobre gestion WPS.
+        <dependency>
+          <groupId>org.geoserver.wps.tracasa</groupId>
+          <artifactId>Tracasa.wps-core</artifactId>
+          <version>1.0.0</version>
+        </dependency>
+         -->
+      </dependencies>
+    </profile>
+    <profile>
       <id>release</id>
       <properties>
         <configDirectory>${basedir}/../../../data</configDirectory>
